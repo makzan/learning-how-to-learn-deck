@@ -1,0 +1,27 @@
+new Vue({
+  el: "#app",
+  data: {
+    isShowSummary: true,
+    isShowIllustration: true,
+    cards: [
+    { id: 1, title: "Chunk", summary: "An individual package of information in our memory. Chunk can be one bit of knowledge or a combined pack such as a dance as a larger chunk.", tags: ["chunk"] },
+    { id: 2, title: "Chunking", summary: "The act of grouping & organizing chunks into compact package.", tags: ["chunk"] },
+    { id: 3, title: "Octopus of Attention", summary: "Focus to make connections from a different chunks.", tags: ["chunk"] },
+    { id: 4, title: "Transfer", summary: "Applying chunks from one mastered topic into another subject that is relevant techniques.", tags: ["chunk"] },
+    { id: 5, title: "Focused Mode", summary: "Deliberately concentrating on the topic or problem to solve.", tags: ["pinball"] },
+    { id: 6, title: "Defuse Mode", summary: "A relax status for the brain to not focusing on thecurrent problem. Our brain may wandar and connect very different parts of chunk for unexpected solution.", tags: ["pinball"] },
+    { id: 7, title: "Einstellung", summary: "Has predisposition in brain that prevents new approaches. Result in not flexible and stuck.", tags: ["pinball"] },
+    { id: 8, title: "Spaced Repetition", summary: "Spread out learning into period. Byte by byte every day. Brain is like muscle.", tags: ["timing"] },
+    { id: 9, title: "Interleaving", summary: "Switching between different topics and mix them so that we use different techniques and strategies.", tags: ["timing"] },
+    { id: 10, title: "Visual Metaphor/Analogy", summary: "Imagine the studying subject into iamge representation of similar things for how things look & work.", tags: ["strategy"] },
+    { id: 11, title: "Process > Product", summary: "Emphaize the important of PROCESS vs product. If we emphaize on product, we may get stuck by procrastination.", tags: ["strategy"] },
+    { id: 12, title: "Pomodoro Technique&reg;", summary: "Get focused for 25 minutes to make progress on the current task. Distraction free and focus on the process. Tackle procrastination.", tags: ["strategy"] },
+    { id: 13, title: "Hard Start → Easy", summary: "Start looking at the hard problem for few minutes. Jump back to easy ones. Later return to the hard problem and avoid einstellung.", tags: ["strategy"] },
+    { id: 14, title: "Law of Serendipity", summary: "Lady Luck favors the one who tries.", tags: ["strategy"] },
+    { id: 15, title: "Working Memory", summary: "The memory for immediately and consciously processing in mind. Short-term and be rubbed out when new 'words' enter.", tags: ["brain"] },
+    { id: 16, title: "Consolidation", summary: "“Changes that take place as the brain organizes and restructures information to make it a permant pack of memory”", tags: ["brain", "sleep"] },
+    { id: 17, title: "Reconsolidation", summary: "“Neurological process by which change occurs in memories as they are recalled and then consolidated. (Memory can change every time they are accessed.)”", tags: ["brain", "sleep"] },
+    { id: 18, title: "Metabolic Toxins", summary: "By product of body’s metabolic. Get washed out of brain during sleep", tags: ["brain", "sleep"] },
+    { id: 19, title: "Habit", summary: "Pattern of behavior that becomes automatic or involuntary. 1. Cue 2. Routine 3. Reward 4. Belief", tags: ["strategy", "brain"] },
+    { id: 20, title: "Illusions of Competence", summary: "Mistaken belief that we learnt something because we only review the part we already learnt. Not knowing that there are still missing key parts.", tags: ["brain"] },
+    { id: 21, title: "Memory Palace Technique", summary: "Use a familiar layout/place and deposit the currently studying topics as images into the layout. FOr better recall by visualizing of place.", tags: ["brain", "strategy"] }] } });

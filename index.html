@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Learning How to Learn deck</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1>Learning How to Learn Deck</h1>
+  <p>A set of concepts for better learning of any subjects.</p>
+</header>
+<div id="app">
+  <label>
+    <input type="checkbox" v-model="isShowSummary"> Show summary
+  </label>
+  <label>
+    <input type="checkbox" v-model="isShowIllustration"> Show illustration
+  </label>
+  <div class="cards" :class="{'hide-summary':!isShowSummary,'hide-illustration':!isShowIllustration}">
+    <article class="card" v-for="card in cards" :id="card.id">
+      <header>Learning How to Learn</header>
+      <h2 v-html="card.title"></h2>
+      <figure>
+        <img :src="'images/'+card.id+'.png'" :alt="card.title">
+      </figure>
+      <div class="summary">{{card.summary}}</div>
+      <div class="tags">
+        <span v-for="tag in card.tags">{{tag}}</span>
+      </div>
+      <div class="source">
+        Learning How to Learn, by Dr. Barbara Oakley & Dr. Terrence Sejnowski
+      </div>
+    </article>
+  </div>
+</div>
+
+<footer>
+  <p>Web page and illustrations created by <a href='https://makzan.net'>Makzan</a>. Content are from <a href='https://www.coursera.org/learn/learning-how-to-learn/'>Learning How to Learn</a>, by Dr. Barbara Oakley & Dr. Terrence Sejnowski. Re-organized into cards by <a href='https://makzan.net'>Makzan</a>.</p>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
