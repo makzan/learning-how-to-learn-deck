@@ -16,12 +16,15 @@
   <p>A set of concepts for better learning of any subjects.</p>
 </header>
 <div id="app">
-  <label>
-    <input type="checkbox" v-model="isShowSummary"> Show summary
-  </label>
-  <label>
-    <input type="checkbox" v-model="isShowIllustration"> Show illustration
-  </label>
+  <p>
+    Please toggle the summary and illustration to test yourself to recall those concepts.<br>
+    <label>
+      <input type="checkbox" v-model="isShowSummary"> Show summary
+    </label>
+    <label>
+      <input type="checkbox" v-model="isShowIllustration"> Show illustration
+    </label>
+  </p>
   <div class="cards" :class="{'hide-summary':!isShowSummary,'hide-illustration':!isShowIllustration}">
     <article class="card" v-for="card in cards" :id="card.id">
       <header>Learning How to Learn</header>
