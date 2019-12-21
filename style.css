@@ -4,8 +4,13 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-gap: 0.5rem;
+}
+@media screen and (min-width: 480px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
 }
 .cards.hide-summary .summary {
   filter: blur(8px);
@@ -25,6 +30,7 @@ body {
 }
 .card header {
   text-align: center;
+  font-size: 0.8em;
 }
 .card h2 {
   font-size: 1.2em;
@@ -38,10 +44,25 @@ body {
   height: 120px;
   object-fit: contain;
 }
+.card .summary {
+  font-size: 0.9em;
+}
 .card .tags {
   position: absolute;
   bottom: 0.5em;
   left: 0.5em;
+  font-size: 0.7em;
+}
+.card .tags span:after {
+  content: ' ';
+}
+@media screen and (min-width: 480px) {
+  .card .summary {
+    font-size: 1em;
+  }
+  .card .tags {
+    font-size: 0.9em;
+  }
 }
 .card .source {
   font-size: 0.5em;
@@ -51,3 +72,4 @@ body {
   text-align: right;
   width: 60%;
 }
+
